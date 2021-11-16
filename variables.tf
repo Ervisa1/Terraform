@@ -1,13 +1,19 @@
 variable "filename" {
-  default     = "my_pet.txt"
-  type        = string
+  type        = list(string)
   description = "this is the name of the file i am going to create"
+  default = ["dog.txt","cat.txt","mice.txt","birds.txt"]
 }
 
 variable "length" {
   default     = "1"
   type        = number
   description = "This is the length of the name of our pet"
+}
+
+variable "lengthh" {
+  default     = "4"
+  type        = number
+  description = "This is the length of the password"
 }
 
 variable "favorite" {
